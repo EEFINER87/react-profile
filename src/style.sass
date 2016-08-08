@@ -1,0 +1,47 @@
+//here's number 2
+
+$link-text-color: #183643
+$light-grey: #E1E1E1
+
+body
+  font-family: 'Helvetica', sanserif
+
+.profilePanel
+  max-width: 400px
+  border: 2px solid $light-grey
+  border-radius: 5px
+  padding: 1em
+  .username
+    color: #08A3E9
+    font-size: 1.1em
+  input[type="text"]
+    padding: 3px 6px
+    margin-left: 6px
+    border: 1px solid $light-grey
+    border-radius: 5px
+  img
+    border: 1px solid $light-grey
+    border-radius: 5px
+    width: 100px
+  a
+    text-decoration: none
+    color: $link-text-color
+    &:hover
+      color: lighten($link-text-color, 15%)
+  .content, .content-left
+    display: table-cell
+    vertical-align: top
+    overflow: hidden
+  .content div
+    margin-top: .5em
+    i
+      margin-right: 6px
+  .content-left
+    padding-right: .5em
+  .editBtn
+    color: $light-grey
+    text-align: right
+    cursor: pointer
+    &:hover
+      color: darken($light-grey, 15%)
+
